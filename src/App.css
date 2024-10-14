@@ -1,0 +1,71 @@
+:root {
+  --purple: #622569;
+  --green: #1c4342;
+  --light-green: #2e6866;
+  --border: #22222234;
+  --grey: #f4f4f4;
+}
+
+.master {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--grey);
+  /* background-image: linear-gradient(
+    90deg,
+    var(--green),
+    var(--light-green) 45% 55%,
+    var(--green)
+  ); */
+}
+
+button.icon-button {
+  background-color: var(--light-green);
+  border: 0px;
+  border-radius: 60px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: large;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.icon-link {
+  color: black;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.growing-button:hover {
+  border: 1px solid var(--green);
+  transition: 1.5s;
+}
+
+.mainDiv {
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+.navbar {
+  background-color: var(--green);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.bottom-contacts {
+  background-color: var(--green);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
