@@ -2,7 +2,6 @@ import Container from "react-bootstrap/Container";
 import MathCard from "../components/MathCard";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Stack from "react-bootstrap/Stack";
 import "../App.css";
 import functionImage from "../assets/function.png";
 
