@@ -1,0 +1,30 @@
+#header {
+  display: flex;
+}
+
+#headertext {
+  margin-left: 5%;
+}
+
+.profile {
+  object-fit: cover;
+  width: clamp(8rem, 20vw, 20rem);
+  border-radius: 1000px;
+  border: 2px solid var(--green);
+  margin-right: 20px;
+}
+
+.infoCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infoCard {
+  width: clamp(10rem, 20vw, 20rem);
+  height: clamp(10rem, 20vw, 20rem);
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--green);
+}

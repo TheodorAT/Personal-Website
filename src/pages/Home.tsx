@@ -1,14 +1,18 @@
 import Container from "react-bootstrap/Container";
 import profilePic from "../assets/profile.jpg";
 import "../App.css";
+import "./Home.css";
 
 function About() {
   return (
     <div className="mainDiv">
       <Container>
-        <div className="row">
-          <h1>Theodor Anderberg Törngren</h1>
+        <div id="header">
           <img className="profile" src={profilePic}></img>
+          <div id="headertext">
+            <h1>Theodor Anderberg Törngren</h1>
+            <p>This is some text about me</p>
+          </div>
         </div>
         <div className="infoCards">
           <div className="infoCard">
