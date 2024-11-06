@@ -1,24 +1,29 @@
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+import profilePic from "../assets/profile.jpg";
 import "../App.css";
 
 function About() {
   return (
     <div className="mainDiv">
       <Container>
-        <h1>Theodor Anderberg Törngren</h1>
-        <Row>
-          <Col>Some cool facts about me</Col>
-          <Col>Here is some text</Col>
-          <Col>Here is some text</Col>
-        </Row>
-        <Row>
-          <Col>1 of 3</Col>
-          <Col>2 of 3</Col>
-          <Col>3 of 3</Col>
-        </Row>
+        <div className="row">
+          <h1>Theodor Anderberg Törngren</h1>
+          <img className="profile" src={profilePic}></img>
+        </div>
+        <div className="infoCards">
+          <div className="infoCard">
+            <p>5th year Engineering Physics Student at LTH</p>
+          </div>
+          <div className="infoCard">
+            <p>Specialization towards Machine Learning and Software</p>
+          </div>
+          <div className="infoCard">
+            <p>Passionate about learning and problem solving</p>
+          </div>
+          <div className="infoCard">
+            <p>Some text</p>
+          </div>
+        </div>
       </Container>
     </div>
   );
