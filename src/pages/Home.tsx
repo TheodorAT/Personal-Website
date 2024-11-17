@@ -10,7 +10,7 @@ function About() {
       <Container>
         <div className="section" id="header">
           <img className="profile" src={profilePic}></img>
-          <div id="headertext">
+          <div id="headerText">
             <h1>Theodor Anderberg Törngren</h1>
             <p>
               I am a fifth-year student of Engineering Physics at LTH with a
@@ -28,7 +28,7 @@ function About() {
           </div>
           <div className="infoCard">
             <h1>4.5+</h1>
-            <p>Grade point average (out of 5)</p>
+            <p>GPA out of 5</p>
           </div>
           <div className="infoCard">
             <h1>8</h1>

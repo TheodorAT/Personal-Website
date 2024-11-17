@@ -7,7 +7,9 @@ function NavBar() {
     <div>
       <Navbar className="navbar" data-bs-theme="dark" expand="md">
         <Container>
-          <Navbar.Brand href="/">Theodor Anderberg Törngren</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <h1>Theodor Anderberg Törngren</h1>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
