@@ -1,17 +1,23 @@
+.section {
+  margin-bottom: 60px;
+}
+
 #header {
-  display: flex;
+  display: flex; 
 }
 
 #headertext {
-  margin-left: 5%;
+  padding: 20px;
+  margin-right: auto;
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 
 .profile {
   object-fit: cover;
-  width: clamp(8rem, 20vw, 20rem);
+  width: clamp(10rem, 20vw, 20rem);
   border-radius: 1000px;
   border: 2px solid var(--green);
-  margin-right: 20px;
+  margin-right: auto;
 }
 
 .infoCards {
@@ -20,11 +26,68 @@
 }
 
 .infoCard {
-  width: clamp(10rem, 20vw, 20rem);
-  height: clamp(10rem, 20vw, 20rem);
-  background-color: white;
+  width: clamp(8rem, 17vw, 20rem);
+  font-size: clamp(0.8rem, 1.5vw, 2rem);
   padding: 10px;
-  margin: 10px;
+  margin-top: 15px;
+  margin-right: auto;
   border-radius: 10px;
   border: 2px solid var(--green);
+}
+
+#contactButtons {
+  display: flex;
+}
+
+#contactButtons > button {
+  font-size: large;
+  border: 2px solid var(--green);
+  background-color: var(--green);
+  border-radius: 60px;
+  padding: 10px;
+  height: 51px;
+  cursor: pointer;
+}
+
+#connectButton {
+  margin-left: auto;
+}
+
+#buttonContent {
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+#buttonContent > i {
+  margin-top: 3px;
+}
+
+#buttonContent > p {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  #header {
+    flex-direction: column;
+  }
+  #headertext {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: auto;
+  }
+  
+  #header {
+    margin-bottom: 0px;
+  }
+
+  .profile {
+    object-fit: cover;
+    width: 10rem;
+    border-radius: 1000px;
+    border: 2px solid var(--green);
+    margin-right: auto;
+  }  
 }
