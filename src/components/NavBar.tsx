@@ -8,7 +8,8 @@ function NavBar() {
       <Navbar className="navbar" data-bs-theme="dark" expand="md">
         <Container>
           <Navbar.Brand href="/">
-            <h1>Theodor Anderberg Törngren</h1>
+            <h1>Theodor Anderberg Törngren</h1>{" "}
+            {/* This should be my logo instead.  */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

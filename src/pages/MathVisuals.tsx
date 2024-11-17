@@ -8,6 +8,7 @@ import functionImage from "../assets/function.png";
 function MathVisuals() {
   return (
     <div className="mainDiv">
+      <h1> Visualizations of Mathematical concepts</h1>
       <Container>
         <h1> Visualizations of Mathematical concepts</h1>
         <h2>Calculus</h2>

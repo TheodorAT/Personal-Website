@@ -4,7 +4,7 @@
   --light-green: #2e6866;
   --border: #22222234;
   --grey: #c7c7c7;
-  --white: #dbdbdb;
+  --white: #f3f3f3;
 }
 
 .master {
@@ -19,11 +19,19 @@
   );
 }
 
+h1 {
+  color: var(--white);
+}
+
 .mainDiv {
   margin-left: 15%;
   margin-right: 10%;
   margin-top: 2%;
   margin-bottom: 10%;
+}
+
+.section {
+  margin-bottom: 60px;
 }
 
 .navbar {
@@ -77,8 +85,8 @@ button.icon-button {
   position: relative;
   color: white;
   text-decoration: none;
-  width: clamp(10rem, 18vw, 20rem);
-  height: clamp(8rem, 16vw, 10rem);
+  width: clamp(15rem, 18vw, 20rem);
+  height: clamp(12rem, 16vw, 10rem);
   margin: clamp(0.1rem, 0.5vw, 0.5rem);
   font-size: clamp(1.5rem, 2vw, 3rem);
 }
