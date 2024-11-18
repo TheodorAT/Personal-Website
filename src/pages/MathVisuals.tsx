@@ -1,60 +1,48 @@
 import Container from "react-bootstrap/Container";
-import MathCard from "../components/MathCard";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import LinkCard from "../components/LinkCard";
 import "../App.css";
+import "./MathVisuals.css";
 import functionImage from "../assets/function.png";
 
-function MathVisuals() {
+function Projects() {
   return (
     <div className="mainDiv">
-      <h1> Visualizations of Mathematical concepts</h1>
       <Container>
-        <h1> Visualizations of Mathematical concepts</h1>
-        <h2>Calculus</h2>
-        <Row sm="auto">
-          <Col>
-            <MathCard
-              title="Functions"
-              image={functionImage}
-              onSelectCard={() => {}}
-            ></MathCard>
-          </Col>
-          <Col>
-            <MathCard
-              title="Derivatives"
-              image={functionImage}
-              onSelectCard={() => {}}
-            ></MathCard>
-          </Col>
-          <Col>
-            <MathCard
-              title="Integrals"
-              image={functionImage}
-              onSelectCard={() => {}}
-            ></MathCard>
-          </Col>
-        </Row>{" "}
-        <h2>Geometry</h2>
-        <Row sm="auto">
-          <Col>
-            <MathCard
-              title="Pythagorean theorem"
-              image={functionImage}
-              onSelectCard={() => {}}
-            ></MathCard>
-          </Col>
-          <Col>
-            <MathCard
-              title="The unit circle"
-              image={functionImage}
-              onSelectCard={() => {}}
-            ></MathCard>
-          </Col>
-        </Row>
+        <div id="menu">
+          <div className="section">
+            <h1>Geometry</h1>
+            <div className="menu-items">
+              <LinkCard
+                title="The Pythagorean Theorem"
+                image={functionImage}
+                link="/math/pythagorean-theorem"
+              ></LinkCard>
+              <LinkCard
+                title="The Unit Circle"
+                image={functionImage}
+                link="/math/unit-circle"
+              ></LinkCard>
+            </div>
+          </div>
+          <div className="section">
+            <h1>Calculus</h1>
+            <div className="menu-items">
+              <LinkCard
+                title="Differentials"
+                image={functionImage}
+                link="/math/differentials"
+              ></LinkCard>
+              <LinkCard
+                title="Integrals"
+                image={functionImage}
+                link="/math/integrals"
+              ></LinkCard>
+            </div>
+          </div>
+        </div>
       </Container>
     </div>
   );
 }
 
-export default MathVisuals;
+export default Projects;

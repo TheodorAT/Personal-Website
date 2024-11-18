@@ -65,11 +65,11 @@ function Projects() {
                 image={resumeImage}
                 link="https://github.com/TheodorAT/Personal-Website"
               ></LinkCard>
-              <LinkCard
+              {/* <LinkCard
                 title="Math Visualizations"
                 image={functionImage}
                 link="/math"
-              ></LinkCard>
+              ></LinkCard> */}
             </div>
           </div>
         </div>
