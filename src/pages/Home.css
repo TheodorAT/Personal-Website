@@ -1,11 +1,11 @@
 #header {
-  display: flex; 
+  display: flex;
 }
 
 #headerText {
   padding: 20px;
   margin-right: auto;
-  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  font-size: clamp(1.2rem, 2.8vw, 3rem);
 }
 
 #headerText > h1 {
@@ -27,10 +27,11 @@
 
 .infoCard {
   width: clamp(8rem, 17vw, 20rem);
-  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-size: clamp(0.8rem, 1.5vw, 2rem);
   padding: 10px;
   margin-top: 15px;
   margin-right: auto;
+  margin-left: auto;
   border-radius: 10px;
   border: 2px solid var(--green);
 }
@@ -45,7 +46,6 @@
 }
 
 #contactButtons > button {
-  font-size: large;
   border: 2px solid var(--green);
   background-color: var(--green);
   border-radius: 60px;
@@ -80,7 +80,7 @@
   margin-right: 10px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   #header {
     flex-direction: column;
   }
@@ -89,7 +89,7 @@
     padding-right: 0px;
     margin-right: auto;
   }
-  
+
   #header {
     margin-bottom: 0px;
   }
@@ -100,5 +100,25 @@
     border-radius: 1000px;
     border: 2px solid var(--green);
     margin-right: auto;
-  }  
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .infoCard {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #buttonContent > p {
+    font-size: clamp(0.8rem, 4.2vw, 1rem);
+  }
+  #buttonContent > i {
+    font-size: clamp(0.7rem, 4vw, 1rem);    
+  }
+
+  #contactButtons > button {
+    height: 46px;
+    height: clamp(2.5rem, 10vw, 46px);
+  }
 }
